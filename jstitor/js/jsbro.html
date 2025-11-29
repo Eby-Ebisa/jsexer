@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image manipulation</title>
+    <link rel="stylesheet" href="css/bulb.css">
+</head>
+<body>
+    <h2>Switch Image</h2>
+    <p >javascript can change HTML attribute</p>
+    <p> in this case javascript can change the value of src(source) attribute of an image</p>
+    
+    <!-- FIX 1: Corrected capitalization in getElementById -->
+    <button id="eby"
+    onclick="document.getElementById('myImage').src='img/bulbon.png'"> 
+        Turn on the light
+    </button>
+    
+    <!-- FIX 2: Corrected the ID to match the JavaScript calls ('myImage') -->
+    <img id="myImage" src="img/bulbon.png" alt="Light switch image"
+    style="width:100px">
+    
+    <!-- FIX 1: Corrected capitalization in getElementById -->
+    <button id="eby" onclick="document.getElementById('myImage').src='img/bulboff.png'">
+        Turn off the light
+    </button>
+</body>
+</html>
